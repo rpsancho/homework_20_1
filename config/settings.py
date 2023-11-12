@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+DB_PASSWORD = '1'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +25,7 @@ STATICFILES_DIRS = (
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@sbk&cao)hm$4lgm9h9^-3mrj2zgcn74esq9sm+sd&+qfpl23w'
+SECRET_KEY = 'django-insecure-$qw9&*#&g0gonsmmig340-6vbvhh)-8(as6huq54(x2)9w1x-5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,8 +82,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'homework_20_1',
+        'USER': 'postgres',
+        'PASSWORD': DB_PASSWORD,
+        'HOST': '127.0.0.1',
+        'PORT': 5432,
     }
 }
 

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "homework-19-2"
+name = "homework-20-1"
 version = "0.1.0"
 description = ""
 authors = ["Alexander Polikarpov <alex-polikarpov@yandex.ru>"]
@@ -7,6 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+django = "^4.2.7"
+psycopg2-binary = "^2.9.9"
 
 
 [build-system]
