@@ -9,7 +9,7 @@ class Category(models.Model):
     # created_at = models.DateField(null=True, auto_now_add=True, verbose_name='дата создания')
 
     def __str__(self):
-        return f"{self.name} {self.description}"
+        return f"{self.name}, {self.description}"
 
     class Meta:
         verbose_name = 'категория'
@@ -26,7 +26,7 @@ class Product(models.Model):
     last_change_date = models.DateField(auto_now=True, verbose_name='дата последнего изменения')
 
     def __str__(self):
-        return f"{self.name} {self.description} {self.category}"
+        return f"{self.name}, {self.description}, {self.category}"
 
     class Meta:
         verbose_name = 'продукт'
