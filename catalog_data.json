@@ -1,0 +1,91 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "удобрения",
+      "description": "чтоб росло"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "разозления",
+      "description": "чтоб бесило"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "бесполезное",
+      "description": "чтоб было"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "навоз",
+      "description": "воняет, за то натуральный",
+      "preview": "products/sa-14.jpg",
+      "category": 1,
+      "price": 300.0,
+      "creation_date": "2023-11-14",
+      "last_change_date": "2023-11-14"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "суперфосфат",
+      "description": "для супер урожая",
+      "preview": "",
+      "category": 1,
+      "price": 1001.0,
+      "creation_date": "2023-11-14",
+      "last_change_date": "2023-11-14"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "пакет без дна",
+      "description": "непонятно что с этим делать, пусть будет",
+      "preview": "",
+      "category": 3,
+      "price": 1.0,
+      "creation_date": "2023-11-14",
+      "last_change_date": "2023-11-14"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "разряженная батарейка",
+      "description": "пусть полежит",
+      "preview": "",
+      "category": 3,
+      "price": 2.0,
+      "creation_date": "2023-11-14",
+      "last_change_date": "2023-11-14"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "будильник",
+      "description": "чтоб бесить по утрам",
+      "preview": "products/na_budilnik.jpg",
+      "category": 2,
+      "price": 600.0,
+      "creation_date": "2023-11-14",
+      "last_change_date": "2023-11-14"
+    }
+  }
+]
